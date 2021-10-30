@@ -1,0 +1,59 @@
+<section id="noticias">
+    <div class="banner"></div>
+
+    <div class="container noticias">
+        <div *ngFor="let item of noticias" class="noticia">
+            <div [ngSwitch]="item.categoria">
+                <div *ngSwitchCase="'1'" class="n-card n-entretenimiento">
+                    <img src="assets/{{item.img}}" class="n-img" alt="{{item.img}}">
+                    <h3 class="n-title">{{item.titulo}}</h3>
+                    <p class="n-text">{{item.contenido}}</p>
+                    <button type="button" class="n-btn" routerLink="noticia/{{item.id}}">Leer mas</button>
+                </div>
+
+                <div *ngSwitchCase="'2'" class="n-card n-mundo">
+                    <img src="assets/{{item.img}}" class="n-img" alt="{{item.img}}">
+                    <h3 class="n-title">{{item.titulo}}</h3>
+                    <p class="n-text">{{item.contenido}}</p>
+                    <button type="button" class="n-btn" routerLink="noticia/{{item.id}}">Leer mas</button>
+                </div>
+
+                <div *ngSwitchCase="'3'" class="n-card n-deporte">
+                    <img src="assets/{{item.img}}" class="n-img" alt="{{item.img}}">
+                    <h3 class="n-title">{{item.titulo}}</h3>
+                    <p class="n-text">{{item.contenido}}</p>
+                    <button type="button" class="n-btn" routerLink="noticia/{{item.id}}">Leer mas</button>
+                </div>
+
+                <div *ngSwitchCase="'4'" class="n-card n-economia">
+                    <img src="assets/{{item.img}}" class="n-img" alt="{{item.img}}">
+                    <h3 class="n-title">{{item.titulo}}</h3>
+                    <p class="n-text">{{item.contenido}}</p>
+                    <button type="button" class="n-btn" routerLink="noticia/{{item.id}}">Leer mas</button>
+                </div>
+
+                <div *ngSwitchCase="'5'" class="n-card n-salud">
+                    <img src="assets/{{item.img}}" class="n-img" alt="{{item.img}}">
+                    <h3 class="n-title">{{item.titulo}}</h3>
+                    <p class="n-text">{{item.contenido}}</p>
+                    <button type="button" class="n-btn" routerLink="noticia/{{item.id}}">Leer mas</button>
+                </div>
+
+                <div *ngSwitchCase="'6'" class="n-card n-tecnologia">
+                    <img src="assets/{{item.img}}" class="n-img" alt="{{item.img}}">
+                    <h3 class="n-title">{{item.titulo}}</h3>
+                    <p class="n-text">{{item.contenido}}</p>
+                    <button type="button" class="n-btn" routerLink="noticia/{{item.id}}">Leer mas</button>
+                </div>
+
+                <div *ngSwitchDefault class="n-card n-default">
+                    <img src="assets/{{item.img}}" class="n-img" alt="{{item.img}}">
+                    <h3 class="n-title">{{item.titulo}}</h3>
+                    <p class="n-text">{{item.contenido}}</p>
+                    <button type="button" class="n-btn" routerLink="noticia/{{item.id}}">Leer mas</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1 class="t-center t-title"><i>Noticias - Valparaiso</i></h1>
+</section>

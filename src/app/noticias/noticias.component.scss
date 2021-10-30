@@ -1,0 +1,159 @@
+.banner {
+    height: 300px;
+    width: 100%;
+    background-image: url('../../assets/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 3rem;
+}
+
+.noticias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    justify-content: center;
+    max-width: 1280px;
+    margin: auto;
+
+    .n-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+
+        padding: 1rem;
+        background-color: rgb(236, 236, 236);
+        max-width: 350px;
+        
+        .n-img {
+            width: calc(100% + 2rem);
+            height: auto;
+            margin: -1rem -1rem 0rem -1rem;
+        }
+
+        h3 {
+            margin: 0;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        button {
+            width: 120px;
+            border: 2px solid transparent;
+            border-radius: 5px;
+            padding: .5rem 1.5rem;
+            font-size: 1rem;
+            margin-left: calc(50% - 60px);
+        }
+
+        button:hover {
+            border: 2px solid #9c9c9c;
+            cursor: pointer;
+        }
+    }
+
+    .n-entretenimiento {
+        h3 {
+            color: #4bb94fcb;
+        }
+
+        button {
+            background-color: #4bb94fcb;
+            color: white;
+        }
+    }
+
+    .n-mundo {
+        h3 {
+            color: #2697d8cb;
+        }
+
+        button {
+            background-color: #2697d8cb;
+            color: white;
+        }
+    }
+
+    .n-deporte {
+        h3 {
+            color: #850101cb;
+        }
+
+        button {
+            background-color: #850101cb;
+            color: white;
+        }
+    }
+
+    .n-economia {
+        h3 {
+            color: #5a00a3cb;
+        }
+
+        button {
+            background-color: #5a00a3cb;
+            color: white;
+        }
+    }
+
+    .n-salud {
+        h3 {
+            color: #00087acb;
+        }
+
+        button {
+            background-color: #00087acb;
+            color: white;
+        }
+    }
+
+    .n-tecnologia {
+        h3 {
+            color: #ff0000cb;
+        }
+
+        button {
+            background-color: #ff0000cb;
+            color: white;
+        }
+    }
+
+    .n-default {
+        h3 {
+            color: #9c9c9c;
+        }
+
+        button {
+            background-color: white;
+            color: #9c9c9c;
+            border: 2px solid #9c9c9c;
+        }
+
+        button:hover {
+            border: 2px solid rgb(0, 0, 0);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .noticias {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .banner {
+        background-position-x: right;
+    }
+
+    .noticias {
+        grid-template-columns: repeat(1, 1fr);
+        .n-card {
+            max-width: 100%;
+        }
+    }
+}

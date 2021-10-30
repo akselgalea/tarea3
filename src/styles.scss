@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0px !important;
+}
+
+.container {
+    padding: .5rem;
+}
+
+.t-center {
+    text-align: center;
+}
+
+.t-title {
+    color: rgb(107, 106, 106);
+}

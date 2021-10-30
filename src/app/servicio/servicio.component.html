@@ -1,0 +1,24 @@
+<div class="container">
+    <h1 class="t-center t-title">Servicio al cliente</h1>
+
+    <form [formGroup]="formu" (ngSubmit)="validarDatos()">
+        <div class="form-group">
+            <label for="">Nombre Completo</label>
+            <input type="text" formControlName="nombre" placeholder="Axel William Ormeño Galea">
+        </div>
+        <div class="form-group">
+            <label for="">Telefono</label>
+            <input type="text" formControlName="telefono" placeholder="+56971636502">
+        </div>
+        <div class="form-group">
+            <label for="">Correo</label>
+            <input type="text" formControlName="correo" placeholder="">
+        </div>
+        <div class="form-group">
+            <label for=""></label>
+            <input type="text" formControlName="dirigido" placeholder="">
+        </div>
+
+        <button type="submit">Enviar!</button>
+    </form>
+</div>
